@@ -113,7 +113,7 @@ a {
 }
 
 img {
-  max-height: 300px;
+  max-height: 260px;
 }
 
 /*NUMBER ONE*/
@@ -295,6 +295,8 @@ img {
   .track { float: left; }
 
   .ss-icon { float: left; margin-right: 10px; font-size: 20px; }
+
+  img { max-height: 300px; }
 
 }
        
