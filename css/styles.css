@@ -59,6 +59,10 @@ html, body {
   display: inline;
 }
 
+.track {
+  font-size: 14px;
+}
+
 .alert {
   background-color: yellow;
   font-size: 12px;
@@ -295,6 +299,8 @@ img {
   .track { float: left; }
 
   .ss-icon { float: left; margin-right: 10px; font-size: 20px; }
+
+  .track { font-size: 16px; }
 
   img { max-height: 300px; }
 
