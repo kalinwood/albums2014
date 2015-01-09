@@ -1,308 +1,109 @@
+/*-----------------------------------*\
+	$RESET
+\*-----------------------------------*/
+
 * {
-  margin: 0; 
-  padding: 0; 
-  position: relative; 
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+	position: relative;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+/*-----------------------------------*\
+	$RESET
+\*-----------------------------------*/
 
 html, body {
-  height: 100%;
-  background: #efefe9;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
-  color: white;
-}
-
-.bg {
-  height: 500px;
-  background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* W3C */
-  padding-top: 100px;
-}
-
-.wrap {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.wrap-two {
-  display: inline-block;
-  padding: 20px;
-  text-align: center;
-}
-
-.banner {
-  text-align: center;
-  width: 100%;
-  padding: 10px 20px;
-  background-color: #4d4d4d;
-  color: #93F9B9;
-  font-weight: 100;
-  font-size: 12px;
-  letter-spacing: 2px;
-}
-
-.ss-icon {
-  font-size: 40px;
-}
-
-.listen {
-  margin-top: 20px;
-}
-
-.info {
-  margin-top: 40px;
-  display: inline;
-}
-
-.track {
-  font-size: 14px;
-}
-
-.alert {
-  background-color: yellow;
-  font-size: 12px;
-  padding: 10px 20px;
-  color: black;
-  text-align: center;
-}
-
-footer {
-  background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%); /* W3C */
-  padding: 10px 20px;
-  font-size: 12px;
-  text-align: center;
-  font-weight: 300;
-}
-
-footer a {
-  color: #fff;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
-
-footer a:hover {
-  color: #4d4d4d;
+	height: 100%;
+	width: 100%;
+	font-family: 'Crimson Text', serif;
+	font-size: 18px;
+	font-weight: 400;
+	background-image: url(../images/angel2.gif);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 h1 {
-  font-size: 24px;
-  font-weight: 300;
-  margin-top: 12px;
+	font-weight: 400;
+	font-size: 1.6em;
 }
 
 h2 {
-  font-size: 18px;
-  font-weight: 300;
-
-  margin-top: -20px;
+	font-style: italic;
+	font-size: 1.2em;
+	margin-top: -20px;
 }
 
-p {
-  font-size: 16px;
-  font-weight: 300;
+.spacer {
+	height: 100%;
+	width: 100%;
 }
 
-a {
-  text-decoration: none;
+.logo {
+	width: 300px;
+	height: 300px;
+	margin: -150px 0 0 -150px;
+    left: 50%;
+    top: 50%;
+	background-image: url(../images/ten2.svg);
+	position: absolute;
+}
+
+.wrap {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+section {
+	background-color: #f9f6ef;
+	display: block;
+	padding: 60px 0;
 }
 
 img {
-  max-height: 260px;
+	max-height: 600px;
 }
 
-/*NUMBER ONE*/
-
-.salad-days {
-  background-color: #c3c7c6;
-  padding: 40px 0px;
-  width: 100%;
-  display: block;
+.album {
+	width: 30%;
+	float: left;
+/*	background-image: url(../images/todd.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;*/
 }
 
-.salad-days h1 {
-  color: #4d627d;
+.why {
+	width: 70%;
+	float: left;
+	padding: 20px;
 }
 
-.salad-days h2 {
-  color: #39393f;
-}
+@media (max-width: 960px) {
+	.album { width: 100%; text-align: center;}
+	.why { width: 100%; }
+	}
 
-.salad-days p {
-  color: #393933;
-}
 
-.salad-days a {
-  color: #39393f;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
 
-.salad-days a:hover {
-  color: #4d627d;
-}
 
-/*NUMBER ONE*/
 
-/*NUMBER TWO*/
 
-.our-love {
-  background-color: #89c2e3;
-  padding: 40px 0px;
-  width: 100%;
-  display: block;
-}
-
-.our-love h1 {
-  color: #f8ef8c;
-}
-
-.our-love h2 {
-  color: #c95d93;
-}
-
-.our-love p {
-  color: #29151e;
-}
-
-.our-love a {
-  color: #c95d93;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
-
-.our-love a:hover {
-  color: #f8ef8c;
-}
-
-/*NUMBER TWO*/
-
-/*NUMBER THREE*/
-
-.too-bright {
-  background-color: #bb9b7c;
-  padding: 40px 0px;
-  width: 100%;
-  display: block;
-}
-
-.too-bright h1 {
-  color: #efefe9;
-}
-
-.too-bright h2 {
-  color: #29151e;
-}
-
-.too-bright p {
-  color: #29151e;
-}
-
-.too-bright a {
-  color: #efefe9;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
-
-.too-bright a:hover {
-  color: #29151e;
-}
-
-/*NUMBER THREE*/
-
-/*NUMBER FOUR*/
-
-.album-time {
-  background-color: #fff;
-  padding: 40px 0px;
-  width: 100%;
-  display: block;
-}
-
-.album-time h1 {
-  color: #ec5054;
-}
-
-.album-time h2 {
-  color: #1076a2;
-}
-
-.album-time p {
-  color: #262626;
-}
-
-.album-time a {
-  color: #247a34;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
-
-.album-time a:hover {
-  color: #ec5054;
-}
-
-/*NUMBER FOUR*/
-
-/*NUMBER FIVE*/
-
-.familiars {
-  background-color: #fcfcf0;
-  padding: 40px 0px;
-  width: 100%;
-  display: block;
-}
-
-.familiars h1 {
-  color: #9b7aa2;
-}
-
-.familiars h2 {
-  color: #705377;
-}
-
-.familiars p {
-  color: #5b5b57;
-}
-
-.familiars a {
-  color: #9b7aa2;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-}
-
-.familiars a:hover {
-  color: #705377;
-}
-
-/*NUMBER FIVE*/
-
-@media (min-width: 760px) {
-
-  .wrap-two { text-align: left; }
-
-  .album { float: left; padding-right: 10px; }
-
-  .track { float: left; }
-
-  .ss-icon { float: left; margin-right: 10px; font-size: 20px; }
-
-  .track { font-size: 16px; }
-
-  img { max-height: 300px; }
-
-}
-       
