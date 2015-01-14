@@ -35,7 +35,7 @@ html, body {
 	font-family: 'Crimson Text', serif;
 	font-size: 18px;
 	font-weight: 400;
-	background-image: url(../images/angel2.gif);
+	background-image: url(../images/vinyl2.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -44,12 +44,14 @@ html, body {
 h1 {
 	font-weight: 400;
 	font-size: 1.6em;
+	color: #312432;
 }
 
 h2 {
 	font-style: italic;
 	font-size: 1.2em;
 	margin-top: -20px;
+	color: #e4585f;
 }
 
 .spacer {
